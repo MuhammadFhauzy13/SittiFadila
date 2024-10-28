@@ -20,3 +20,9 @@ section {
 .bi-1 {
   font-size: 35px;
 }
+.gallery-img {
+  width: 100%;
+}
+#gallery .row > * {
+  padding: 0;
+}

@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="logo.png" />
@@ -43,7 +45,7 @@
     <section class="jumbotron text-center">
       <img src="dila1 cut 2.jpg" class="rounded-circle img-thumbnail" alt="SittiFadila" width="200" />
       <h1 class="display-4">Sitti Fadila</h1>
-      <p class="lead">Student | Content Creator</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -63,10 +65,10 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" dat-aos-duration="1000">
             <p>Halo, saya Sitti Fadila. Saya seorang yang selalu bersemangat untuk belajar dan mencoba hal baru.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <p>Saya suka membaca,menulis dan juga terlibat dalam kegiatan komunitas</p>
           </div>
         </div>
@@ -89,10 +91,39 @@
             <h2>Gallery</h2>
           </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <a href=""><img src="dila3 cut.jpg" class="img-fluid gallery-img" alt="gambar 1" /> </a>
+          </div>
+          <div class="col-md-4">
+            <a href=""><img src="dila 5 cut.jpg" class="img-fluid gallery-img" alt="gambar 1" /> </a>
+          </div>
+          <div class="col-md-4">
+            <a href=""><img src="dila 4.jpg" class="img-fluid gallery-img" alt="gambar 1" /> </a>
+          </div>
+          <div class="col-md-4">
+            <a href=""><img src="dila 6.jpg" class="img-fluid gallery-img" alt="gambar 1" /> </a>
+          </div>
+          <div class="col-md-4">
+            <a href=""><img src="dila 9.jpg" class="img-fluid gallery-img" alt="gambar 1" /> </a>
+          </div>
+          <div class="col-md-4">
+            <a href=""><img src="dila 7.jpg" class="img-fluid gallery-img" alt="gambar 1" /> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="dila3 cut.jpg" class="card-img-top" alt="Gallery 1" />
+              <img src="dila3 cut.jpg" class="card-img-top gallery-img" alt="Gallery 1" />
               <div class="card-body">
                 <p class="card-text"></p>
               </div>
@@ -100,7 +131,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="dila 5 cut.jpg" class="card-img-top" alt="Gallery 2" />
+              <img src="dila 5 cut.jpg" class="card-img-top gallery-img" alt="Gallery 2" />
               <div class="card-body">
                 <p class="card-text"></p>
               </div>
@@ -108,7 +139,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="dila 4.jpg" class="card-img-top" alt="Gallery 3" />
+              <img src="dila 4.jpg" class="card-img-top gallery-img" alt="Gallery 3" />
               <div class="card-body">
                 <p class="card-text"></p>
               </div>
@@ -116,7 +147,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="dila 6.jpg" class="card-img-top" alt="Gallery 3" />
+              <img src="dila 6.jpg" class="card-img-top gallery-img" alt="Gallery 3" />
               <div class="card-body">
                 <p class="card-text"></p>
               </div>
@@ -124,7 +155,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="dila 9.jpg" class="card-img-top" alt="Gallery 3" />
+              <img src="dila 9.jpg" class="card-img-top gallery-img" alt="Gallery 3" />
               <div class="card-body">
                 <p class="card-text"></p>
               </div>
@@ -132,7 +163,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="dila 7.jpg" class="card-img-top" alt="Gallery 3" />
+              <img src="dila 7.jpg" class="card-img-top gallery-img" alt="Gallery 3" />
               <div class="card-body">
                 <p class="card-text"></p>
               </div>
@@ -147,7 +178,7 @@
           d="M0,128L40,117.3C80,107,160,85,240,117.3C320,149,400,235,480,234.7C560,235,640,149,720,117.3C800,85,880,107,960,144C1040,181,1120,235,1200,245.3C1280,256,1360,224,1400,208L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
         ></path>
       </svg>
-    </section>
+    </section> -->
     <!-- akhir gallery -->
 
     <!-- contact -->
@@ -209,6 +240,27 @@
     <!-- akhir footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll('.gallery-img');
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = 'fade-down';
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+      AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Student | Content Creator' });
+      gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0 });
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0 });
+      gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyeZTMReWe5yIRwSDnuTK2MQ_CV3Y3BgMqvFTi556OK-fPujyjyPL6cK68xeZLSvG-l/exec';
